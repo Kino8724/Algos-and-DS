@@ -103,3 +103,13 @@ function countNonSpaces(str) {
 // removeShorterStrings(['There', 'is', 'a', 'bug', 'in', 'the', 'system'], 3) => ['There', 'bug', 'the', 'system']
 
 
+function removeShorterStrings(arr, val) {
+  let newArray = []
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i].length >= val) {
+      newArray[newArray.length] = arr[i]
+    }
+  }
+  return newArray
+}
+// console.log(removeShorterStrings(['There', 'is', 'a', 'bug', 'in', 'the', 'system'], 3))
