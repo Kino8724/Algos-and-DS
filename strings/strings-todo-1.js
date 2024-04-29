@@ -68,7 +68,7 @@ function acronym(str) {
   });
   return result
 }
-console.log(acronym(" there's no free lunch - gotta pay yer way. "))
+// console.log(acronym(" there's no free lunch - gotta pay yer way. "))
 
 // ----------------------
 
@@ -80,6 +80,16 @@ console.log(acronym(" there's no free lunch - gotta pay yer way. "))
 // countNonSpaces("Honey pie, you are driving me crazy") => 29
 // countNonSpaces("Hello world !") => 11
 
+function countNonSpaces(str) {
+  let count = 0;
+  for (let i = 0; i < str.length; i++) {
+    if (str[i] != " ") {
+      count += 1
+    }
+  }
+  return count
+}
+// console.log(countNonSpaces("Hello world !"))
 
 
 // ----------------------
