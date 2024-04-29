@@ -57,6 +57,18 @@ const getDigits = (str) => {
 //
 // acronym("Live from New York, it's Saturday Night!") => "LFNYISN".
 
+function acronym(str) {
+  let words = str.split(" ");
+  let result = "";
+  console.log(words)
+  words.forEach(word => {
+    if (word != "") {
+      result += word[0].toUpperCase();
+    }
+  });
+  return result
+}
+console.log(acronym(" there's no free lunch - gotta pay yer way. "))
 
 // ----------------------
 
