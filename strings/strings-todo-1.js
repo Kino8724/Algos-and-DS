@@ -13,6 +13,17 @@
 // removeBlanks(" Pl ayTha tF u nkyM usi c ") => "PlayThatFunkyMusic"
 // removeBlanks("I can not BELIEVE it's not BUTTER") => "IcannotBELIEVEit'snotBUTTER"
 
+const removeBlanks = (str) => {
+  let newString = ""
+  for (let i = 0; i < str.length; i++) {
+    if (str[i] != " ") {
+      newString += str[i]
+    }
+  }
+  return newString
+}
+// console.log(removeBlanks("I Cannot Believe Its Not Butter"))
+
 
 // ----------------------
 
