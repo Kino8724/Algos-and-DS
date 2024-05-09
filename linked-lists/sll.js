@@ -36,6 +36,21 @@ class SLL {
     }
     this.head = this.head.next;
   }
+
+  display() {
+    if (!this.head) {
+      return null;
+    }
+
+    let runner = this.head;
+    let arr = []
+
+    while (runner !== null) {
+      arr.push(`${runner.data}`);
+      runner = runner.next;
+    }
+    return arr.toString();
+  }
 }
 
 let SLL1 = new SLL();
@@ -49,4 +64,5 @@ console.log("Next: " + SLL1.head.next);
 SLL1.removeFront();
 
 console.log(SLL1.head);
-console.log(SLL1.front())
+console.log(SLL1.front());
+console.log(SLL1.display());
